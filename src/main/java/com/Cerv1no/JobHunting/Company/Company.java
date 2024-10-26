@@ -28,5 +28,5 @@ public class Company {
 
     @JsonIgnore
     @OneToMany(mappedBy = "company")
-    private List<Review> revies;
+    private List<Review> reviews;
 }
