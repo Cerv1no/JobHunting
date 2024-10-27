@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("/companies")
 public class CompanyController {
 
-    private CompanyService companyService;
+    private final CompanyService companyService;
 
     @Autowired
     public CompanyController(CompanyService companyService) {
@@ -20,7 +20,7 @@ public class CompanyController {
 
     @GetMapping
     public ResponseEntity<List<Company>> getAllCompanies() {
-        return new ResponseEntity<>(companyService.getAllCompanies(), HttpStatus.OK);
+        return ResponseEntity.ok(companyService.getAllCompanies());
     }
 
     @PutMapping("/{id}")

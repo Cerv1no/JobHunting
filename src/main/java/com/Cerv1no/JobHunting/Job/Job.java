@@ -1,6 +1,7 @@
 package com.Cerv1no.JobHunting.Job;
 
 import com.Cerv1no.JobHunting.Company.Company;
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

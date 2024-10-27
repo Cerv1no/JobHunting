@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("/jobs")
 public class JobController {
 
-    private JobService jobService;
+    private final JobService jobService;
 
     @Autowired
     public JobController(JobService jobService) {
